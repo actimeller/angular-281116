@@ -48,7 +48,7 @@ function isNumber(item) {
 function summator() {
     var a = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        a[_i - 0] = arguments[_i];
+        a[_i] = arguments[_i];
     }
     var result = 0;
     for (var _a = 0, a_2 = a; _a < a_2.length; _a++) {
@@ -75,7 +75,7 @@ console.info(summator(1, 2, '12')); // 15
 function getUnique() {
     var arr = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        arr[_i - 0] = arguments[_i];
+        arr[_i] = arguments[_i];
     }
     var uniqueArr = [];
     nextInput: for (var _a = 0, arr_1 = arr; _a < arr_1.length; _a++) {

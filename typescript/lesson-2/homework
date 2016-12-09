@@ -1,0 +1,17 @@
+1) напишите простое приложение использующее Flickr api которое выдает фото по запросу
+Оно должно представлять поле ввода и кнопку по нажатию на которым происходит поиск изображения
+
+
+// строка запороса => `${this.uri}method=${this.qyeryMethod}&api_key=${this.apiKey}&text=${text}&page=1&format=json&nojsoncallback=1`
+// строка для атрибута src у img => https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg
+// uri: 'https://api.flickr.com/services/rest/?',
+// queryMethod: 'flickr.photos.search',
+// apiKey: '7fbc4d0fd04492d32fa9a2f718c6293e'
+
+
+
+2) Используйте loadsh что бы добавить debounce кнопке поиска и fetch api. Можно использовать определение с занятия для fetch
+занятия или @types
+3) Используйте webpack для сборки результируещего bundle
+
+P.S если есть вопросы , сразу пишем
