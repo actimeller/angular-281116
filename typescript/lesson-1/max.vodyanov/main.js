@@ -40,4 +40,12 @@ var menuList = [
         ]
     }
 ];
+var menu = (function () {
+    function menu() {
+    }
+    menu.prototype.getElem = function () {
+        return '';
+    };
+    return menu;
+}());
 //# sourceMappingURL=main.js.map

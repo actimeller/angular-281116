@@ -4,7 +4,7 @@
 function getUnique() {
     var arr = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        arr[_i] = arguments[_i];
+        arr[_i - 0] = arguments[_i];
     }
     var newArr = [];
     arr.forEach(function (el) {

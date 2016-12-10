@@ -1,4 +1,4 @@
-var excludeSymbols = function (chars) {
+ var excludeSymbols = function (chars) {
     var result = [];
     chars.forEach(function (item, index) {
         if (!/[a-zA-Z]/.test(item)) {

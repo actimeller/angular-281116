@@ -40,3 +40,15 @@ let menuList = [
         ]
     }
 ];
+
+class menu {
+
+    public getElem(): string {
+        return ''
+    }
+
+    public toggle: boolean;
+    public close: boolean;
+    public open: boolean;
+
+}
