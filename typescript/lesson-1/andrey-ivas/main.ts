@@ -21,7 +21,7 @@ console.log(isInArray([1, 2, 'one'], 1, 'one'));
  Аргументы могут быть либо строкового либо числового типа. Количество их не ограничено
  */
 function getType(elem: (number | string)): string {
-    let res;
+    let res:string;
     if (typeof elem === 'string') {
         res = 'string';
     }
