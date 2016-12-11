@@ -20,7 +20,7 @@ console.log(isInArray([1, 2, 'one'], 1, 'one'));
  писать функцию summator(), которая сумирует переданые ей аргументы.
  Аргументы могут быть либо строкового либо числового типа. Количество их не ограничено
  */
-function getType(elem: any): string {
+function getType(elem: (number | string)): string {
     let res;
     if (typeof elem === 'string') {
         res = 'string';
@@ -30,6 +30,7 @@ function getType(elem: any): string {
     }
     return res;
 }
+function summator(...arg: (number|string)[]): string
 function summator(...arg: any[]): string {
     let sum: number = 0;
     for (let i = 0; i < arg.length; i++) {
@@ -61,7 +62,8 @@ console.log(summator(1, 'rr', 2, '2'));
  Порядок элементов результирующего массива должен совпадать с порядком,
  в котором они встречаются в оригинальной структуре.
  */
-function getUnique(...arr: any[]): any[] {
+type summ  = number | string | boolean;
+function getUnique(...arr: summ[]): summ[] {
     let res: any = [];
     let k: number = 0;
     for (let i = 0; i < arr.length; i++) {
