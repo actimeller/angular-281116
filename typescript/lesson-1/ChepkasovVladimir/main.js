@@ -1,5 +1,7 @@
+// import {Menu} from './menuClass'
 function isString(item) {
     if (typeof item === 'string') {
+        // TS понимает item=string;
         return true;
     }
     return false;
@@ -56,7 +58,7 @@ var Menu = (function () {
         return false;
     };
     Menu.prototype.toggle = function (label) {
-        var element = this.ul.querySelector('#' + label);
+        var element = this.ul.querySelector("#" + label);
         if (isElement(element)) {
             element.classList.toggle('menu-open');
         }

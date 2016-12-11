@@ -2,6 +2,7 @@
 
 function isString(item:any): item is string{
         if (typeof item === 'string') {
+            // TS понимает item=string;
            return true;
         }
         return false;
@@ -55,7 +56,7 @@ class Menu {
       return this.ul;
     }
     private onClick(event:Event, menu:Menu):boolean{
-      let label:any = (<HTMLElement> event.target).getAttribute('data-label');
+      let label:any = ( event.target as HTMLElement).getAttribute('data-label');
       let result:boolean = false;
 
       if(isString(label)){
@@ -66,7 +67,7 @@ class Menu {
     }
 
     public toggle(label:string):void{
-      let element:any = this.ul.querySelector('#' + label);
+      let element:any = this.ul.querySelector(`#${label}`);
       if(isElement(element)){
         element.classList.toggle('menu-open');
       }
@@ -89,7 +90,9 @@ class Menu {
     }
 }
 
-let menuList = [
+type menuList = {title:string,items?:menuList}[]
+
+let menuList:menuList = [
     {
         title: 'Животные',
         items: [

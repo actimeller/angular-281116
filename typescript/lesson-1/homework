@@ -35,3 +35,9 @@
 
  6) Реализуйте слайдер !!!!!
  http://learn.javascript.ru/task/slider
+
+
+
+ Рассмотреть
+ function getUnique(...arr:ReadonlyArray<number>):void {
+ }

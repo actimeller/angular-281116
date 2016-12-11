@@ -51,7 +51,7 @@ for(let e of list){
 }
 
 
-let reverse_btn = document.createElement('button');
+let reverse_btn:HTMLButtonElement = document.createElement('button');
 reverse_btn.textContent = "reverseLetters";
 reverse_btn.onclick = function() {
     alert(reversed.join('\n\r'));
