@@ -3,7 +3,7 @@
 //   Возвращает true, если все аргументы, кроме первого входят в первый.
 //   Первым всегда должен быть массив.
 
-function isInArray(array:any[], ...numberArray: any[]): boolean {
+function isInArray(array:number[], ...numberArray: number[]): boolean {
   for (let e of numberArray) {
     if (array.indexOf(e) == -1){
       return false;
@@ -12,7 +12,7 @@ function isInArray(array:any[], ...numberArray: any[]): boolean {
   return true;
 }
 
-let isInArray_btn = document.createElement('button');
+let isInArray_btn:HTMLButtonElement = document.createElement('button');
 isInArray_btn.textContent = "isInArray";
 isInArray_btn.onclick = function() {
     alert('Data: [1,2,3,4], 1,2,3,4 isInArray:' + isInArray([1,2,3,4], 1,2,3,4)
