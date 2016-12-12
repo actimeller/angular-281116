@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './typescript/lesson-2/main.ts',
+    entry: './typescript/lesson-2/RostDidyk/main.ts',
     output: {
         filename: './typescript/flickr-app-dist/bundle.js'
     },
