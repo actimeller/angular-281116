@@ -1,0 +1,25 @@
+{
+  "name": "AndreyEremenko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "^2.0.34",
+    "@types/lodash": "^4.14.43",
+    "@types/whatwg-fetch": "0.0.32",
+    "ts-loader": "^1.3.1",
+    "typescript": "^2.1.4",
+    "webpack": "^1.14.0"
+  }
+}
