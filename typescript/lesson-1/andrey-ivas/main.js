@@ -34,7 +34,7 @@ function getType(elem) {
 function summator() {
     var arg = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        arg[_i] = arguments[_i];
+        arg[_i - 0] = arguments[_i];
     }
     var sum = 0;
     for (var i = 0; i < arg.length; i++) {
@@ -58,16 +58,10 @@ function summator() {
     return "The sum is " + sum;
 }
 console.log(summator(1, 'rr', 2, '2'));
-/*
- Написать функцию getUnique(arr), которая принимает аргументом неограниченое число аргументов,
- и возвращает массив уникальных элементов. Аргумент не должен изменяться.
- Порядок элементов результирующего массива должен совпадать с порядком,
- в котором они встречаются в оригинальной структуре.
- */
 function getUnique() {
     var arr = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        arr[_i] = arguments[_i];
+        arr[_i - 0] = arguments[_i];
     }
     var res = [];
     var k = 0;
