@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "lib": ["es5","dom","es2015.promise"],
+        "target": "es5",
+        "noImplicitAny": true,
+        "sourceMap": false,
+        "typeRoots": ["../../../node_modules","../types"],
+        "types": ["fetch"]
+
+        //"noEmitOnError": true
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "**/*.ts"
+    ],
+    "files": [
+        "main.ts"
+    ]
+
+
+}

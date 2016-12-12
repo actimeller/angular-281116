@@ -1,0 +1,12 @@
+#title {
+    font-family: "Arial";
+    font-size: 21px;
+    color: darkcyan;
+}
+#title .error {
+    color: darkred;
+}
+
+#inner {
+
+}

@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "sourceMap": false
+        //"noEmitOnError": true
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include":"**/*.ts",
+    "files": [
+        "menu.ts",
+        "main.ts"
+    ]
+
+
+}
