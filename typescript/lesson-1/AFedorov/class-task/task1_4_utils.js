@@ -21,7 +21,7 @@ var Utils = (function () {
     Utils.summator = function () {
         var args = [];
         for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i - 0] = arguments[_i];
+            args[_i] = arguments[_i];
         }
         var res = 0;
         if (args.length > 1)
@@ -34,7 +34,7 @@ var Utils = (function () {
     Utils.getUnique = function () {
         var args = [];
         for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i - 0] = arguments[_i];
+            args[_i] = arguments[_i];
         }
         var lookup = new Set();
         for (var _a = 0, args_3 = args; _a < args_3.length; _a++) {

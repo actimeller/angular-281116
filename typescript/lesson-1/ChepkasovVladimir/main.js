@@ -1,5 +1,7 @@
+// import {Menu} from './menuClass'
 function isString(item) {
     if (typeof item === 'string') {
+        // TS понимает item=string;
         return true;
     }
     return false;

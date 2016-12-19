@@ -1,3 +1,6 @@
+// 2)
+//  писать функцию summator(), которая сумирует переданые ей аргументы.
+//  Аргументы могут быть либо строкового либо числового типа. Количество их не ограничено
 function isNumber(e) {
     if (typeof e === 'number')
         return true;
@@ -6,7 +9,7 @@ function isNumber(e) {
 function summator() {
     var arg = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        arg[_i - 0] = arguments[_i];
+        arg[_i] = arguments[_i];
     }
     var sum = 0;
     for (var _a = 0, arg_1 = arg; _a < arg_1.length; _a++) {

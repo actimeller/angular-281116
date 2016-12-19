@@ -1,5 +1,6 @@
 "use strict";
 var lodash_1 = require("lodash");
+// npm install --save @types/lodash
 var Photo = (function () {
     function Photo() {
     }
@@ -34,6 +35,7 @@ var FlickrAPI = (function () {
         this.uri = 'https://api.flickr.com/services/rest/?';
     }
     FlickrAPI.prototype.execute = function (url) {
+        //TODO: debounce method
         return fetch(url).then(function (res) { return res.json(); });
     };
     FlickrAPI.prototype.renderSrc = function (photo) {
@@ -81,6 +83,7 @@ var FlickrInterface = (function () {
         this.imageField = document.createElement('img');
         this.buttonFind = document.createElement('button');
         this.buttonFind.textContent = 'Find';
+        //this.buttonFind.onclick = this.onClick;
         this.buttonFind.onclick = lodash_1.debounce(this.onClick, this.wait);
         this.inputField.onchange = this.onChange;
         this.inputField.value = '';
@@ -94,6 +97,7 @@ var FlickrInterface = (function () {
     }
     return FlickrInterface;
 }());
+// Run flickrInterface
 var elements = document.getElementById('flickr');
 var flickrInterface;
 if (isHTMLElement(elements)) {
