@@ -20,7 +20,7 @@ function summator(...arg: (number | string)[]): number {
     return sum;
 }
 
-let summator_btn = document.createElement('button');
+let summator_btn:HTMLButtonElement = document.createElement('button');
 summator_btn.textContent = "summator";
 summator_btn.onclick = function() {
     alert("Data: 1,'2',3,'4' Sum:" + summator(1,'2',3,'4'));

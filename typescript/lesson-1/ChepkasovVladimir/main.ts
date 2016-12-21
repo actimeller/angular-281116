@@ -16,8 +16,15 @@ function isElement(item:any): item is Element{
   return false;
 }
 
-class Menu {
-    private items:Array<any>;
+interface MenuMethod {
+  getElem():HTMLElement;
+  toggle(label:string):void;
+  close(label:string):void;
+  open(label:string):void;
+}
+
+class Menu implements MenuMethod {
+    private items:menuList;
     private ul:HTMLElement;
 
     private getTemplate(object:any, path:string):string{
@@ -73,19 +80,19 @@ class Menu {
       }
     }
 
-    public close(label:string){
-      let element:any = this.ul.querySelector('#' + label);
+    public close(label:string):void{
+      let element:any = this.ul.querySelector(`#${label}`);
       if(isElement(element)){
         element.classList.remove('menu-open');
       }
     }
-    public open(label:string){
-      let element:any = this.ul.querySelector('#' + label);
+    public open(label:string):void{
+      let element:any = this.ul.querySelector(`#${label}`);
       if(isElement(element)){
         element.classList.add('menu-open');
       }
     }
-    public constructor(menuItems:Array<any>) {
+    public constructor(menuItems:menuList) {
       this.items = menuItems;
     }
 }

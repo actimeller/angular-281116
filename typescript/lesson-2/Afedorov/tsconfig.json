@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+	"lib":["es5","dom","es2015.promise","es6"],
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "strictNullChecks": true,
+	"emitDecoratorMetadata": true,
+    	"experimentalDecorators": true
+    },    
+
+    "filesGlob": [
+        "src/**/*.ts",
+        "!node_modules/**"
+    ]
+
+}
